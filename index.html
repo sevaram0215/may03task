@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <h1 id="heading">the new name</h1>
+      <h1 class="subheading">the sub heading</h1>
+    </div>
+  </body>
+  <script>
+    let heading = document.getElementById("heading");
+    console.log(heading);
+    console.log(heading.innerText);
+    let para = document.getElementsByClassName("subheading");
+    for (let i = 0; i < para.length; i++) {
+      console.log(para[i].innerText);
+    }
+    heading.style.color = "red";
+    heading.style.background = "black";
+    heading.style.font = "20px";
+
+    //    ------------------crate element by js-----------ch
+
+    let main_container = document.getElementsByClassName("main_container");
+    let child_div = document.createElement("div");
+    child_div.innerText = "i am child div";
+    console.log(child_div.innerText);
+
+    let p = document.createElement("p");
+    p.innerText = "This is paragragph";
+    p.innerText = p.innerText + "  " + "Hello Seva";
+
+    child_div.classList.add("child_div");
+    p.classList.add("paragraph");
+    console.log(p);
+    main_container[0].appendChild(child_div);
+    child_div.appendChild(p);
+  </script>
+</html>
