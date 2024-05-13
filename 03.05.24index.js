@@ -8,10 +8,10 @@
    // <--------------------------example------------------------>
 
 
-// let food=["mango","apple","orange"];
-// food.forEach(function(ele){
-//     console.log(ele)
-// })
+let food=["mango","apple","orange"];
+food.forEach(function(ele){
+    console.log(ele)
+})
 // the output is-:
 // mango
 // apple
@@ -36,11 +36,11 @@
 
   // <--------------------------example------------------------>
 
-//   let cost=[100,400,300,700];
-//   let data=cost.map(function(cost){
-//     return cost*2;
-//   });
-//   console.log(data);
+  // let cost=[100,400,300,700];
+  // let data=cost.map(function(cost){
+  //   return cost*2;
+  // });
+  // console.log(data);
 
 // <--------------------------3rd filter------------------------>
 

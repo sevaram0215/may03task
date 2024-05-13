@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    img {
+      height: 250px;
+      width: 90%;
+      border-radius: 10px 15px 20px 05px;
+    }
+    #main_contanier {
+      width: 70%;
+      margin: auto;
+      margin-top: 40px;
+      background-color: rgb(219, 235, 235);
+      /* border: 2px solid red ; */
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    #main_contanier div {
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      border: 2px solid rgb(16, 15, 15);
+      border-radius: 20px 15px 20px 05px;
+    }
+    div:nth-child(odd){
+        background-color: rgb(221, 224, 235);
+    }
+    p{
+     margin-top: -20px;
+    }
+    h1{
+        margin-top: -10px;
+    }
+    button {
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    button:hover {
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgb(5, 199, 5);
+    }
+
+    @media screen and (min-width: 200px) and (max-width: 757px) {
+      img {
+        height: 200px;
+        width: 100%;
+        border-radius: 10px 25px 20px 05px;
+      }
+      div:nth-child(even){
+        background-color: rgb(221, 224, 235);
+    }
+    div:nth-child(odd){
+        background-color: rgb(231, 214, 201);
+    }
+      #main_contanier {
+        width: auto;
+        margin: auto;
+        background-color: rgb(238, 212, 121);
+        border: 3px solid red;
+
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 758px) and (max-width: 1024px) {
+      #main_contanier {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #main_contanier div {
+        background-color: rgb(232, 232, 245);
+      }
+    
+    }
+  </style>
+  <body>
+    <div id="main_contanier"></div>
+  </body>
+  <script>
+    let main_contanier = document.getElementById("main_contanier");
+
+    let card_1 = document.createElement("div");
+    card_1.classList.add("card_1");
+    let img1 = document.createElement("img");
+    img1.src =
+      "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg";
+    let title1 = document.createElement("h1");
+    title1.innerText = "Natural Photo ";
+    let details1 = document.createElement("p");
+    details1.innerText = "Natural describes something that comes from nature, rather than being man-made. Your healthy friend who only eats natural food will probably choose carrots instead of potato chips for a snack.";
+    let btn1 = document.createElement("button");
+    btn1.innerText = "Read more";
+    card_1.append(img1, title1, details1, btn1);
+    main_contanier.append(card_1);
+
+    let card_2 = document.createElement("div");
+    card_2.classList.add("card_2");
+    let img2 = document.createElement("img");
+    img2.src =
+      "https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg";
+    let title2 = document.createElement("h1");
+    title2.innerText = "Animal Lover ";
+    let details2 = document.createElement("p");
+    details2.innerText =
+      "Natural describes something that comes from nature, rather than being man-made. Your healthy friend who only eats natural food will probably choose carrots instead of potato chips for a snack. .";
+    let btn2 = document.createElement("button");
+    btn2.innerText = "Read more";
+    card_2.append(img2, title2, details2, btn2);
+    main_contanier.append(card_2);
+
+    let card_3 = document.createElement("div");
+    card_3.classList.add("card_3");
+    let img3 = document.createElement("img");
+    //  img3.src ="https://webneel.com/daily/sites/default/files/images/daily/11-2017/1-tribal-by-famous-photographer-jimmy-nelson.preview.jpg"
+    img3.src =
+      "https://cdn.pixabay.com/photo/2024/04/18/20/41/ai-generated-8705017_640.png";
+    let title3 = document.createElement("h1");
+    title3.innerText = "Tree Lover ";
+    let details3 = document.createElement("p");
+    details3.innerText = "Natural describes something that comes from nature, rather than being man-made. Your healthy friend who only eats natural food will probably choose carrots instead of potato chips for a snack.";
+    let btn3 = document.createElement("button");
+    btn3.innerText = "Read more";
+    card_3.append(img3, title3, details3, btn3);
+    main_contanier.append(card_3);
+
+    let card_4 = document.createElement("div");
+    card_4.classList.add("card_4");
+    let img4 = document.createElement("img");
+    img4.src =
+      "https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_640.jpg";
+    let title4 = document.createElement("h1");
+    title4.innerText = "Lover Tree ";
+    let details4 = document.createElement("p");
+    details4.innerText = "Natural describes something that comes from nature, rather than being man-made. Your healthy friend who only eats natural food will probably choose carrots instead of potato chips for a snack.";
+    let btn4 = document.createElement("button");
+    btn4.innerText = "Read more";
+    card_4.append(img4, title4, details4, btn4);
+    main_contanier.append(card_4);
+
+    console.log(main_contanier);
+  </script>
+</html>
